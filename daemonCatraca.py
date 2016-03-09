@@ -15,6 +15,7 @@
 
 import socket
 import datetime
+import time
 import henry7x as catraca
 import re
 import logging
@@ -29,7 +30,7 @@ HOST = '192.168.1.5'							# Endereco IP da Catraca, definido utilizando o progr
 PORT = 3000										# Porta da Catraca, definida utilizando o programa da Henry 7X
 tempoTimeout = 60								# Timeout da conexao 
 tempoCatracaLiberada = 10						# Tempo que a catraca permanece destravada
-LOG_FILENAME = "/var/log/catracaDaemon.log"		# Arquivo de Log da catraca
+LOG_FILENAME = "catracaDaemon.log"		# Arquivo de Log da catraca
 LOG_LEVEL = logging.INFO 						# Nivel de Log
 debugDados = False								# Auxiliar para debuggar dados recebidos
 
